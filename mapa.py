@@ -1,5 +1,4 @@
-import webbrowser
-import pyperclip
+import webbrowser,pyperclip
 
 
 def endereco_completo():
