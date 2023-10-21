@@ -1,8 +1,11 @@
-import webbrowser, pyperclip
+import webbrowser
+import pyperclip
+
 
 def endereco_completo():
     info = input('\nInforme o seu endereço: ')
     return info
+
 
 def cep():
     while True:
@@ -37,6 +40,7 @@ def resultado(opcao):
     endereco = pyperclip.paste()
     webbrowser.open('https://www.google.com/maps/place/' + endereco)
 
+
 def menu():
     print('\n\t----MENU----')
     print('\nInforme um dos números correspondentes: ')
@@ -55,5 +59,6 @@ def menu():
         except:
             print('>> Valor não permitido. Tente novamente.')
             continue
+
 
 menu()
